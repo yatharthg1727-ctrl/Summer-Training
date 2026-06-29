@@ -1,0 +1,26 @@
+// Write a program to print reverse aray using pointer.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[5];
+    int *ptr = arr;
+
+    cout << "Enter 5 elements:\n";
+
+    for(int i = 0; i < 5; i++)
+    {
+        cin >> *(ptr + i);
+    }
+
+    cout << "Reverse Array:\n";
+
+    for(int i = 4; i >= 0; i--)
+    {
+        cout << *(ptr + i) << " ";
+    }
+
+    return 0;
+}
